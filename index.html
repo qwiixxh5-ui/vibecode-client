@@ -6,10 +6,8 @@
   <meta name="theme-color" content="#07080d" />
   <meta name="description" content="Vibecode — клиент Minecraft 1.21.4 для тех, кто играет по-своему." />
   <title>Vibecode — Minecraft Client</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="overrides.css" />
 </head>
 <body>
   <div class="noise"></div>
@@ -20,7 +18,7 @@
     <nav aria-label="Навигация">
       <a href="#features">Возможности</a><a href="#versions">Версии</a><a href="#faq">FAQ</a>
     </nav>
-    <a class="nav-action" href="#download">Скачать <span>↗</span></a>
+    <div class="nav-actions"><button class="nav-login" data-auth="login">Войти</button><button class="nav-register" data-auth="register">Регистрация</button><button class="nav-action" data-download>Скачать <span>↗</span></button></div>
   </header>
 
   <main id="top">
@@ -71,7 +69,8 @@
     <section class="faq wrap" id="faq"><div class="section-head"><p class="eyebrow"><span></span> FAQ</p><h2>Частые вопросы</h2></div><div class="faq-list"><details open><summary>Какая версия Minecraft поддерживается?<b>+</b></summary><p>Сейчас доступна сборка для Minecraft Java Edition 1.21.4 с Fabric Loader.</p></details><details><summary>Клиент бесплатный?<b>+</b></summary><p>Да, базовая версия Vibecode доступна бесплатно.</p></details><details><summary>Как установить клиент?<b>+</b></summary><p>Скачайте архив, распакуйте его и следуйте инструкции, которая будет добавлена вместе с релизом.</p></details></div></section>
   </main>
   <footer class="footer wrap"><a class="brand" href="#top"><span class="brand-mark"><i></i><b></b></span><span>VIBECODE</span></a><p>© 2026 Vibecode. Not affiliated with Mojang or Microsoft.</p><a href="mailto:support@example.com">Поддержка ↗</a></footer>
-  <dialog id="download-dialog"><button class="close" aria-label="Закрыть">×</button><p class="eyebrow"><span></span> СКОРО БУДЕТ ДОСТУПНО</p><h2>Релиз уже<br /><em>близко.</em></h2><p>Кнопка загрузки подготовлена. Добавьте в папку сайта файл клиента и замените ссылку в <code>script.js</code>.</p><button class="primary close">Понятно</button></dialog>
+  <dialog id="download-dialog" class="modal"><button class="close" aria-label="Закрыть">×</button><p class="eyebrow"><span></span> АКТУАЛЬНАЯ СБОРКА</p><h2>Vibecode<br /><em>1.21.4</em></h2><p>Клиент для Minecraft Java Edition с Fabric Loader.</p><div class="download-info"><span>◈</span><div><b>Vibecode-1.21.4.jar</b><small>Windows · Fabric · актуальная версия</small></div></div><a class="primary download-file" href="#" aria-disabled="true">Скачать клиент <span>↓</span></a><small class="download-note">Файл релиза будет подключён сюда после загрузки сборки.</small></dialog>
+  <dialog id="auth-dialog" class="modal auth-modal"><button class="close" aria-label="Закрыть">×</button><p class="eyebrow"><span></span> ЛИЧНЫЙ КАБИНЕТ</p><h2 data-auth-title>Войти</h2><p data-auth-text>Это демонстрационное окно. Аккаунты и данные не сохраняются.</p><form><label>Никнейм или почта<input type="text" placeholder="Введите никнейм" autocomplete="off" /></label><label>Пароль<input type="password" placeholder="Введите пароль" autocomplete="off" /></label><button class="primary" type="button" data-auth-submit>Войти <span>→</span></button></form><button class="modal-switch" type="button" data-auth-switch>Нет аккаунта? Зарегистрироваться</button></dialog>
   <script src="script.js"></script>
 </body>
 </html>

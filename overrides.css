@@ -1,0 +1,21 @@
+/* Local system font stack: works even when external fonts are blocked. */
+body{font-family:Inter,"Segoe UI",Arial,sans-serif}
+h1,h2,h3,.brand,.ticker span,.feature-number,.faq summary{font-family:Arial,Helvetica,sans-serif;font-weight:800}
+.primary,.keybind kbd,.window-logo,.fps strong{font-family:Inter,"Segoe UI",Arial,sans-serif}
+.nav-actions{display:flex;align-items:center;gap:7px}
+.nav-login,.nav-register{background:transparent;border:0;color:#b7bac4;font:700 12px Inter,"Segoe UI",Arial,sans-serif;padding:10px 8px;cursor:pointer}
+.nav-register{border:1px solid #303341;border-radius:9px;padding:9px 12px}
+.nav-login:hover,.nav-register:hover{color:#fff;border-color:#65599a}
+.nav-action{background:#1a1b24;cursor:pointer;font-family:Inter,"Segoe UI",Arial,sans-serif}
+.download-info{display:flex;gap:12px;align-items:center;padding:13px;background:#1c1e2b;border:1px solid #323546;border-radius:9px;margin:22px 0 13px}
+.download-info>span{background:#8c72f42b;color:#c2b4ff;border-radius:7px;padding:9px}
+.download-info b,.download-info small{display:block;font-size:11px}
+.download-info small{color:#979cad;margin-top:3px}
+.download-file{display:block;text-align:center;text-decoration:none}
+.download-note{display:block;text-align:center;color:#74798a;font-size:9px;margin-top:13px}
+.auth-modal form{display:grid;gap:13px;margin-top:20px}
+.auth-modal label{display:grid;gap:7px;color:#b8bac5;font-size:11px;font-weight:700}
+.auth-modal input{width:100%;border:1px solid #353847;border-radius:8px;background:#1b1d28;color:#fff;padding:12px;font:13px Inter,"Segoe UI",Arial,sans-serif;outline:none}
+.auth-modal input:focus{border-color:#937bf5}
+.modal-switch{margin-top:16px;padding:0;border:0;background:none;color:#afa0eb;font:600 11px Inter,"Segoe UI",Arial,sans-serif;cursor:pointer}
+@media(max-width:760px){.nav-login,.nav-register{display:none}}
