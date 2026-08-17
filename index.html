@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07080d" />
+  <meta name="description" content="Vibecode — клиент Minecraft 1.21.4 для тех, кто играет по-своему." />
+  <title>Vibecode — Minecraft Client</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Vibecode">
+      <span class="brand-mark"><i></i><b></b></span><span>VIBECODE</span>
+    </a>
+    <nav aria-label="Навигация">
+      <a href="#features">Возможности</a><a href="#versions">Версии</a><a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-action" href="#download">Скачать <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Minecraft client · 1.21.4</p>
+        <h1>Играй в своём<br /><em>ритме.</em></h1>
+        <p class="intro">Лёгкий и выразительный клиент для Minecraft. Больше контроля, плавнее игра, узнаваемый стиль.</p>
+        <div class="hero-actions" id="download">
+          <button class="primary" data-download>Скачать клиент <span>↓</span></button>
+          <a class="text-link" href="#features">Смотреть возможности <span>→</span></a>
+        </div>
+        <div class="platforms"><span>Работает с</span><b>Windows</b><i></i><b>Fabric</b><i></i><b>1.21.4</b></div>
+      </div>
+      <div class="visual" aria-label="Интерфейс клиента Vibecode">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="client-window">
+          <div class="window-top"><span class="window-logo">V</span><span>Vibecode</span><div class="dots"><i></i><i></i><i></i></div></div>
+          <div class="client-body">
+            <aside><span class="active">✦</span><span>⌘</span><span>◈</span><span>◌</span><span>⚙</span></aside>
+            <div class="panel">
+              <div class="panel-heading"><div><small>MODULES</small><h2>Combat</h2></div><button>+ Add</button></div>
+              <div class="module active-module"><div class="module-icon">◉</div><div><strong>Crystal Aura</strong><small>Automatically attacks nearby crystals</small></div><label><input type="checkbox" checked /><span></span></label></div>
+              <div class="module"><div class="module-icon">◌</div><div><strong>Auto Totem</strong><small>Moves totem to offhand when needed</small></div><label><input type="checkbox" /><span></span></label></div>
+              <div class="module"><div class="module-icon">⌁</div><div><strong>Velocity</strong><small>Fine-tune knockback behaviour</small></div><label><input type="checkbox" checked /><span></span></label></div>
+              <div class="keybind"><span>Keybind</span><kbd>RSHIFT</kbd></div>
+            </div>
+          </div>
+        </div>
+        <div class="float-card fps"><small>FPS</small><strong>284</strong><span>+42%</span></div>
+        <div class="float-card status"><i></i><span>Client online</span></div>
+      </div>
+    </section>
+
+    <section class="ticker"><div><span>ПЛАВНОСТЬ</span><b>✦</b><span>КАСТОМИЗАЦИЯ</span><b>✦</b><span>ОПТИМИЗАЦИЯ</span><b>✦</b><span>ПЛАВНОСТЬ</span><b>✦</b><span>КАСТОМИЗАЦИЯ</span></div></section>
+
+    <section class="features wrap" id="features">
+      <div class="section-head"><p class="eyebrow"><span></span> ВСЁ НЕОБХОДИМОЕ</p><h2>Создан для того,<br />чтобы <em>ощущать</em> игру.</h2></div>
+      <div class="feature-grid">
+        <article class="feature feature-large"><div class="feature-number">01</div><div class="feature-art crosshair"><i></i><i></i><i></i><i></i><b></b></div><h3>Полный контроль</h3><p>Гибкие модули и настройки, которые подстраиваются под ваш стиль игры.</p></article>
+        <article class="feature"><div class="feature-number">02</div><div class="feature-art bars"><i></i><i></i><i></i><i></i><i></i></div><h3>Больше FPS</h3><p>Оптимизация для стабильной игры даже в насыщенных мирах.</p></article>
+        <article class="feature"><div class="feature-number">03</div><div class="feature-art palette"><i></i><i></i><i></i><i></i></div><h3>Твой интерфейс</h3><p>Меняйте темы, HUD и анимации до мельчайших деталей.</p></article>
+      </div>
+    </section>
+
+    <section class="versions wrap" id="versions"><div class="version-glow"></div><p class="eyebrow"><span></span> ВЫБЕРИ СВОЙ РЕЖИМ</p><h2>Начни играть с <em>Vibecode.</em></h2><p class="version-copy">Актуальная сборка для Minecraft 1.21.4 уже готова.</p><div class="version-card"><div><small>АКТУАЛЬНАЯ ВЕРСИЯ</small><h3>Vibecode <b>1.21.4</b></h3><p>Fabric loader · Windows 10/11</p></div><button class="primary" data-download>Скачать бесплатно <span>↓</span></button></div></section>
+
+    <section class="faq wrap" id="faq"><div class="section-head"><p class="eyebrow"><span></span> FAQ</p><h2>Частые вопросы</h2></div><div class="faq-list"><details open><summary>Какая версия Minecraft поддерживается?<b>+</b></summary><p>Сейчас доступна сборка для Minecraft Java Edition 1.21.4 с Fabric Loader.</p></details><details><summary>Клиент бесплатный?<b>+</b></summary><p>Да, базовая версия Vibecode доступна бесплатно.</p></details><details><summary>Как установить клиент?<b>+</b></summary><p>Скачайте архив, распакуйте его и следуйте инструкции, которая будет добавлена вместе с релизом.</p></details></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#top"><span class="brand-mark"><i></i><b></b></span><span>VIBECODE</span></a><p>© 2026 Vibecode. Not affiliated with Mojang or Microsoft.</p><a href="mailto:support@example.com">Поддержка ↗</a></footer>
+  <dialog id="download-dialog"><button class="close" aria-label="Закрыть">×</button><p class="eyebrow"><span></span> СКОРО БУДЕТ ДОСТУПНО</p><h2>Релиз уже<br /><em>близко.</em></h2><p>Кнопка загрузки подготовлена. Добавьте в папку сайта файл клиента и замените ссылку в <code>script.js</code>.</p><button class="primary close">Понятно</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
